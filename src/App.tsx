@@ -6,7 +6,7 @@ import { StatusScreen } from './components/StatusScreen'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Navigate to={`/e/${DEFAULT_EVENT_SLUG}`} replace />} />
         <Route path="/e/:slug" element={<AttendeePage />} />

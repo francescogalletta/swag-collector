@@ -14,6 +14,7 @@ export function fmtRating(n: number | null | undefined): string {
   return Number(n).toFixed(1)
 }
 
+/** Absolute attendee URL, honouring a sub-path deploy (Vite's BASE_URL always ends with "/"). */
 export function joinUrl(slug: string): string {
-  return `${window.location.origin}/e/${slug}`
+  return `${window.location.origin}${import.meta.env.BASE_URL}e/${slug}`
 }
