@@ -25,7 +25,7 @@ npm run lint       # oxlint
 
 ## Supabase
 
-The project (`swag-collector`, ref `pwrvfqrryikcqzoasnoo`) is already provisioned. The frontend only uses what exists:
+The project (`swag-collector`, ref `cszircituveqitecfzib`) is already provisioned. The frontend only uses what exists:
 
 - Tables: `events`, `vendors`, `swag_items`, `votes` (RLS on, anonymous insert/select, update on votes).
 - Views: `swag_item_ratings`, `vendor_leaderboard`, `swag_type_counts` for the boards.
